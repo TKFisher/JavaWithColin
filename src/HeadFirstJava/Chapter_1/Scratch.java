@@ -1,7 +1,7 @@
-package scratch;
+package HeadFirstJava.Chapter_1;
 
 
-public class Chapter_1
+public class Scratch
 
 {
 
@@ -29,7 +29,8 @@ public class Chapter_1
         System.out.println("this line runs no matter what");
     }
 
-    // A WHILE loop runs everything within its block (defined by curly braces) as long as the conditional test is true.
+    // A WHILE loop runs everything within its block (defined by curly braces)
+    // as long as the conditional test is true.
     // Put a boolean test inside parentheses
     public static void while_1()
     {
@@ -72,38 +73,6 @@ public class Chapter_1
         if (x == 1) {
             System.out.print("Do");
         }
-    }
-
-    /* Challenge 1:  99 bottles of beer on the wall
-    We need a class with a main(), an int and a String variable, a while loop, and an if test. */
-    public static void ninetyNineBottlesOfBeer(boolean beerBottles)
-    {
-        int bottleNum = 99;
-
-        if (beerBottles) {
-
-            while (bottleNum > 0) {
-                System.out.print(bottleNum + " bottles of beer on the wall, " + bottleNum + " bottles of beer.\n" +
-                        "Take one down and pass it around, ");
-
-                bottleNum = bottleNum - 1;
-
-
-                if (bottleNum > 1) {
-                    System.out.println(bottleNum + " bottles of beer on the wall.\n");
-
-
-                } else if (bottleNum == 1) {
-                    System.out.println(bottleNum + " bottle of beer on the wall.\n");
-
-                } else if (bottleNum == 0) {
-
-                    System.out.println("...no more bottles of beer on the wall, no more bottles of beer. \n" +
-                            "Go to the store and buy some more, 99 bottles of beer on the wall. ");
-                }
-            }
-        }
-        System.out.println("No beer here! ");
     }
 
 

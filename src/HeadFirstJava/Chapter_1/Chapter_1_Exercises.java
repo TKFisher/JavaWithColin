@@ -1,4 +1,4 @@
-package scratch;
+package HeadFirstJava.Chapter_1;
 
 public class Chapter_1_Exercises
 {
@@ -7,8 +7,45 @@ public class Chapter_1_Exercises
     {
         //exercise2a();
 
+        ninetyNineBottlesOfBeer(true);
+
         PoolPuzzleOne();
         //PoolPuzzleBookExample();
+
+
+    }
+
+
+    /* Challenge 1:  99 bottles of beer on the wall
+    We need a class with a main(), an int and a String variable, a while loop, and an if test. */
+    public static void ninetyNineBottlesOfBeer(boolean beerBottles)
+    {
+        int bottleNum = 99;
+
+        if (beerBottles) {
+
+            while (bottleNum > 0) {
+                System.out.print(bottleNum + " bottles of beer on the wall, " + bottleNum + " bottles of beer.\n" +
+                        "Take one down and pass it around, ");
+
+                bottleNum = bottleNum - 1;
+
+
+                if (bottleNum > 1) {
+                    System.out.println(bottleNum + " bottles of beer on the wall.\n");
+
+
+                } else if (bottleNum == 1) {
+                    System.out.println(bottleNum + " bottle of beer on the wall.\n");
+
+                } else if (bottleNum == 0) {
+
+                    System.out.println("...no more bottles of beer on the wall, no more bottles of beer. \n" +
+                            "Go to the store and buy some more, 99 bottles of beer on the wall. ");
+                }
+            }
+        }
+        System.out.println("No beer here! ");
     }
 
     public static void PoolPuzzleOne()
@@ -38,32 +75,33 @@ public class Chapter_1_Exercises
 
             }
             System.out.println();
-            x = x + 1 ;
+            x = x + 1;
         }
     }
 
-    public static void PoolPuzzleBookExample(){
+    public static void PoolPuzzleBookExample()
+    {
 
         int x = 0;
 
-        while ( x < 4 ) {
+        while (x < 4) {
 
             System.out.print("a");
-            if ( x < 1 ) {
+            if (x < 1) {
                 System.out.print(" ");
             }
             System.out.print("n");
 
-            if ( x > 1 ) {
+            if (x > 1) {
 
                 System.out.print(" oyster");
                 x = x + 2;
             }
-            if ( x == 1 ) {
+            if (x == 1) {
 
                 System.out.print("noys");
             }
-            if ( x < 1 ) {
+            if (x < 1) {
 
                 System.out.print("oise");
             }
