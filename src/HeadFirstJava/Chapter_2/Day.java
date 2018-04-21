@@ -36,7 +36,7 @@ public class Day
         day[6] = "Saturday";
         day[7] = "Sunday";
 
-        // TODO: finish this 
+        // TODO: finish this
 
     }
 
