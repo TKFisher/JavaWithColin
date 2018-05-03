@@ -1,5 +1,6 @@
 package HeadFirstJava.Chapter_2;
 
+
 public class Day
 {
     public void determineSuffix(int dayNum)
@@ -24,19 +25,35 @@ public class Day
         }
     }
 
-    public void determineSiffixTwo(int numDay)
+    // For Bonus Points:   same as above but make an array to do the same things.
+
+    public void determineSuffixTwo(int numDay)
     {
         String[] day = new String[7];
 
-        day[1] = "Monday";
-        day[2] = "Tuesday";
-        day[3] = "Wednesday";
-        day[4] = "Thursday";
-        day[5] = "Friday";
-        day[6] = "Saturday";
-        day[7] = "Sunday";
+        day[0] = "Monday";
+        day[1] = "Tuesday";
+        day[2] = "Wednesday";
+        day[3] = "Thursday";
+        day[4] = "Friday";
+        day[5] = "Saturday";
+        day[6] = "Sunday";
 
-        // TODO: finish this
+        for (int i = 0; i < day.length; i++){
+
+           // day[i] = i;
+        }
+
+
+    }
+
+    public void determineSuffixThree(){
+
+        String [] day = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", };
+
+
+
+
 
     }
 

@@ -18,9 +18,8 @@ public class Triangle
 
         while (x < 4) {
 
-            // Creates the Triangle object and assigns 'ta[x]' with 3 empty variables: area, height, length
-            // Each pass of the loop will store the values for area, height, and length in the index positions
-            // of the array.
+            // Creates 3 new Triangle objects. For each pass of the loop variables are assigned to 'ta[x]'.
+            // The values for area, height, and length will be stored in each object in the index positions: 0, 1, 2, 3 of the array.
             ta[x] = new Triangle();
             ta[x].height = (x + 1) * 2;
             ta[x].length = x + 4;
