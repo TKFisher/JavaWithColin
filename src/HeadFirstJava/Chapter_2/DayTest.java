@@ -28,14 +28,14 @@ public class DayTest
 
         // In-class exercise:
 
-//        Day one = new Day();
-//        Day two = new Day();
-//        Day three = new Day();
-//        Day four = new Day();
-//        Day five = new Day();
-//        Day six = new Day();
-//        Day seven = new Day();
-//
+        Day one = new Day();
+        Day two = new Day();
+        Day three = new Day();
+        Day four = new Day();
+        Day five = new Day();
+        Day six = new Day();
+        Day seven = new Day();
+
 //        one.determineSuffix(1);
 //        two.determineSuffix(2);
 //        three.determineSuffix(3);
@@ -45,7 +45,15 @@ public class DayTest
 //        seven.determineSuffix(7);
 
 
-        // For Bonus Points:
+        // For Bonus Points - determineSuffixTwo:
+
+        Day bonusDay2 = new Day();
+        //bonusDay2.determineSuffixTwo(1);
+
+        // For Bonus Points - determineSuffixThree:
+        Day bonusDay3 = new Day();
+        bonusDay3.determineSuffixThree();
+
 
 
 

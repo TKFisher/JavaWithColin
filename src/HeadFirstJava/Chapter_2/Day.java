@@ -39,22 +39,30 @@ public class Day
         day[5] = "Saturday";
         day[6] = "Sunday";
 
+        String dayOfWeek = null;
+        int dayPosition = 1;
+
         for (int i = 0; i < day.length; i++){
 
-           // day[i] = i;
-        }
-
-
+            dayOfWeek = day[i];
+            System.out.println("It's " + dayOfWeek + ", day " + dayPosition + " of the week.");
+            dayPosition ++;
+            }
     }
 
     public void determineSuffixThree(){
 
         String [] day = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", };
 
+        String dayOfWeek = null;
+        int dayPosition = 1;
 
+        for (int i = 0; i < day.length; i++){
 
-
+            dayOfWeek = day[i];
+            System.out.println("It's " + dayOfWeek + ", day " + dayPosition + " of the week.");
+            dayPosition ++;
+        }
 
     }
-
 }
