@@ -27,7 +27,7 @@ public class Day
 
     // For Bonus Points:   same as above but make an array to do the same things.
 
-    public void determineSuffixTwo(int numDay)
+    public void determineSuffixThree()
     {
         String[] day = new String[7];
 
@@ -50,7 +50,7 @@ public class Day
             }
     }
 
-    public void determineSuffixThree(){
+    public void determineSuffixFour(){
 
         String [] day = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", };
 

@@ -26,7 +26,8 @@ public class DayTest
     public static void main(String[] args)
     {
 
-        // In-class exercise:
+        System.out.println("In-class exercise: ");
+
 
         Day one = new Day();
         Day two = new Day();
@@ -36,25 +37,24 @@ public class DayTest
         Day six = new Day();
         Day seven = new Day();
 
-//        one.determineSuffix(1);
-//        two.determineSuffix(2);
-//        three.determineSuffix(3);
-//        four.determineSuffix(4);
-//        five.determineSuffix(5);
-//        six.determineSuffix(6);
-//        seven.determineSuffix(7);
+        one.determineSuffix(1);
+        two.determineSuffix(2);
+        three.determineSuffix(3);
+        four.determineSuffix(4);
+        five.determineSuffix(5);
+        six.determineSuffix(6);
+        seven.determineSuffix(7);
 
 
-        // For Bonus Points - determineSuffixTwo:
+        System.out.println("For Bonus Points - determineSuffixThree:");
 
         Day bonusDay2 = new Day();
-        //bonusDay2.determineSuffixTwo(1);
+        bonusDay2.determineSuffixThree();
 
-        // For Bonus Points - determineSuffixThree:
+
+        System.out.println("For Bonus Points - determineSuffixFour:");
         Day bonusDay3 = new Day();
-        bonusDay3.determineSuffixThree();
-
-
+        bonusDay3.determineSuffixFour();
 
 
     }
