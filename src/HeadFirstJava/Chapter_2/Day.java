@@ -63,6 +63,5 @@ public class Day
             System.out.println("It's " + dayOfWeek + ", day " + dayPosition + " of the week.");
             dayPosition ++;
         }
-
     }
 }

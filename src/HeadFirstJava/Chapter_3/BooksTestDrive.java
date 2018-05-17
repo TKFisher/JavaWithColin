@@ -7,14 +7,13 @@ public class BooksTestDrive
     public static void main(String[] args)
     {
 
-
-
         // < =  Declare a Book array variable 'myBooks'.
         // > =  Create a Book array and assign it to the declared Book variable.
         Books[] myBooks = new Books[3];
 
-        // What’s missing?
-        // Books! We have an array of Book references, but no actual Book objects!
+        // What’s missing above?
+        // Books! We have an array above of Book references, but no actual Book objects!
+        // This is where we create the Book objects.
         myBooks[0] = new Books();
         myBooks[1] = new Books();
         myBooks[2] = new Books();
