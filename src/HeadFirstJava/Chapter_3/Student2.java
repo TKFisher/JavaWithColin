@@ -2,7 +2,7 @@ package HeadFirstJava.Chapter_3;
 
 public class Student2
 {
-    String name ;
+    String name;
     double examScore = 0;
 
     public String gradeLetter(double examScore)
