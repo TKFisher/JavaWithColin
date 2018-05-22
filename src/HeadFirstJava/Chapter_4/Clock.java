@@ -23,6 +23,6 @@ class ClockTestDrive {
         c.setTime("12:45");
         String tod = c.getTime();
         System.out.println("time: " + tod);
-
     }
+
 }

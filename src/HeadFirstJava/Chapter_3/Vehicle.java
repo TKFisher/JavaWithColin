@@ -23,4 +23,5 @@ public class Vehicle
                  + myCar.numOfSeats + " seats."
          );
     }
+
 }
