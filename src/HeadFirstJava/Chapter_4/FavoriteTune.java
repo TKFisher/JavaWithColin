@@ -7,6 +7,13 @@ public class FavoriteTune
     private String albumName;
 
 
+    public static void main(String[] args)
+    {
+        FavoriteTune myBand = new FavoriteTune("CCR", "Cosmo's Factory", "'Who'll Stop the rain'");
+        myBand.printFavorites();
+    }
+
+    // Constructor
     public FavoriteTune(String bandName, String albumName, String songName)
     {
         this.bandName = bandName;
@@ -24,7 +31,7 @@ public class FavoriteTune
         System.out.println("My favorite band is " + this.bandName + " and my favorite song is " + this.songName + " from the ablum " + this.albumName);
     }
 
-    // Using method to set the values instead
+    // Using Constructor above to set the values instead setter methods 
 //    public void setBandName(String bandName)
 //    {
 //        this.bandName = bandName;
@@ -54,14 +61,5 @@ public class FavoriteTune
     public String getAlbumName()
     {
         return albumName;
-    }
-
-
-    public static void main(String[] args)
-    {
-
-        FavoriteTune myBand = new FavoriteTune("CCR", "Cosmo's Factory", "'Who'll Stop the rain'");
-        myBand.printFavorites();
-
     }
 }
