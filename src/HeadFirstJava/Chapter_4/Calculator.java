@@ -24,8 +24,7 @@ public class Calculator
         myCalc.add(6, 6);
         myCalc.subtract(9, 1);
         myCalc.multiply(2, 10);
-        myCalc.divide(50, 10);
-        
+        myCalc.divide(17, 3);
     }
 
 

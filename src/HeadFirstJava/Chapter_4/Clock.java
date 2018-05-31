@@ -1,6 +1,7 @@
 package HeadFirstJava.Chapter_4;
 
-// Excercise  - fix the Clock class to compile and work.
+// Exercise  - fix the Clock class to compile and work.
+
 
 public class Clock
 {
