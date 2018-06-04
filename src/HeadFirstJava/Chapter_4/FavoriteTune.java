@@ -31,7 +31,7 @@ public class FavoriteTune
         System.out.println("My favorite band is " + this.bandName + " and my favorite song is " + this.songName + " from the ablum " + this.albumName);
     }
 
-    // Using Constructor above to set the values instead setter methods 
+    // Using Constructor above to set the values instead setter methods
 //    public void setBandName(String bandName)
 //    {
 //        this.bandName = bandName;
