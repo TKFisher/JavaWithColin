@@ -27,7 +27,6 @@ public class Dice
             System.out.println( (diceRolls[i]) + " = " + sumOfDice);
         }
 
-
         if (diceRolls[0] == diceRolls[1] && diceRolls[0] == diceRolls[2] && diceRolls[1] == diceRolls[2]) {
             System.out.println("Yatzee");
 
@@ -41,5 +40,6 @@ public class Dice
         System.out.println("The sum of 3 rolls equals: " + sumOfDice);
         return sumOfDice;
     }
+
 }
 
