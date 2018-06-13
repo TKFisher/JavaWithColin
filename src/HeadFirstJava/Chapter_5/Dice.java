@@ -6,9 +6,16 @@ public class Dice
     // returns a random number between 1 & 6
     public int rollDice()
     {
-        int random3 = (int) (Math.random() * 6 + 1);
-        // System.out.println(random3);
-        return random3;
+        int random = (int) (Math.random() * 6 + 1);
+        return random;
+    }
+
+    // returns a random number between 1 & 6
+    public int enhancedRollDice()
+    {
+        int[] myDie = new int[]{1,2,3,4,5,6};
+        int myPick = myDie[(int)(Math.random() * 6 )];
+        return myPick;
     }
 
     /*
@@ -24,10 +31,10 @@ public class Dice
         int sumOfDice = 0;
         for (int i = 0; i <= diceRolls.length - 1; i++) {
             sumOfDice += diceRolls[i];
-            System.out.println( (diceRolls[i]) + " = " + sumOfDice);
+            System.out.println((diceRolls[i]) + " = " + sumOfDice);
         }
 
-        if (diceRolls[0] == diceRolls[1] && diceRolls[0] == diceRolls[2] && diceRolls[1] == diceRolls[2]) {
+        if (diceRolls[0] == diceRolls[1] && diceRolls[0] == diceRolls[2]) {
             System.out.println("Yatzee");
 
         } else if (diceRolls[0] != diceRolls[1] && diceRolls[0] != diceRolls[2] && diceRolls[1] != diceRolls[2]) {

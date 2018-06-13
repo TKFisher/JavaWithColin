@@ -21,8 +21,9 @@ public class SimpleDotCom
         for (int cell : locationCells) {
             if (guess == cell) {
                 result = "hit";
-                // add 1 to whatever there is in this variable (ie increment by 1)
+
                 numOfHits++;
+                System.out.println("You got a hit.");
                 break;
             }
         }
@@ -32,17 +33,13 @@ public class SimpleDotCom
             System.out.println("You sunk my battleship!");
         }
 
-        //System.out.println(result);
         return result;
     }
 
     public static int getRandomNumber (double min, double max){
 
         int x = (int) (Math.random() * ((max - min) ) + min);
-        System.out.println(x);
         return x;
-
-
     }
 
 }

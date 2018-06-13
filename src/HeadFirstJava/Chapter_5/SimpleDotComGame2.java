@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class SimpleDotComGame2
 {
 
-
     public static void main(String[] args)
     {
 
@@ -45,6 +44,4 @@ public class SimpleDotComGame2
             System.out.println("You've guessed " + numOfGuesses + " times.");
         }
     }
-
-
 }
