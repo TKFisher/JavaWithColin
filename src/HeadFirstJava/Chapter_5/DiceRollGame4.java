@@ -9,13 +9,13 @@ public class DiceRollGame4
 
         // roll 5 dice
         Dice4 myDice = new Dice4();
-        int[] rolls;
-        rolls = myDice.rollDice();
-        myDice.determineWinner(rolls);
+//        int[] rolls;
+//        rolls = myDice.rollDice();
+//        myDice.determineWinner(rolls);
 
         // Test out combinations:
-        //int [] myRolls = {2, 2, 1, 1, 1};
-        //myDice.determineWinner(myRolls);
+        int [] myRolls = {1, 2, 2, 2, 6};
+        myDice.determineWinner(myRolls);
 
     }
 }

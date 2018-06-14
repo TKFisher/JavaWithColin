@@ -165,7 +165,10 @@ public class Dice4
             sixes++;
         }
 
-        if (diceRolls[0] == diceRolls[1] && diceRolls[0] == diceRolls[2]) {
+        if (diceRolls[0] == diceRolls[1] &&
+                diceRolls[1] == diceRolls[2] &&
+                diceRolls[2] == diceRolls[3] &&
+                diceRolls[3] == diceRolls[4]) {
             System.out.println("Yatzee!!");
         }
 
@@ -191,7 +194,7 @@ public class Dice4
         }
 
         if ((ones == 3 || twos == 3 || threes == 3 || fours == 3 || fives == 3 || sixes == 3)) {
-            System.out.println("You have one triples.");
+            System.out.println("You have one triple.");
         }
     }
 }
