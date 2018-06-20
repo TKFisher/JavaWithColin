@@ -1,41 +1,45 @@
 package HeadFirstJava.Chapter_5;
 
+import java.util.Scanner;
+
 public class SimpleDotComGame
 {
 
     public static void main(String[] args)
     {
+        int numOfGuesses = 0;
 
+        Scanner scan = new Scanner(System.in);
+
+        // creating the SimpleDotCom object
         SimpleDotCom myDot = new SimpleDotCom();
 
-        int[] locations = {2,3,4};
+        // returns a value between 0 an 4.999 which is (1, 2, 3, 4) because the (int) chops off the double.
+        int randNumber = (int) (Math.random() * 5);
 
+        // setting 3 values in the array
+        int[] locations = {randNumber, randNumber + 1, randNumber + 2};
+
+        // setting the 3 locations
         myDot.setLocationCells(locations);
 
 
-/*        String userGuess = "4";
-        String result = myDot.checkYourself(userGuess);
+        boolean isAlive = true;
 
-        String testResult = "failed";
+        while (isAlive == true) {
 
-        if (result.equals("hit")) {
-            testResult = "passed";
-        }
-        System.out.println(testResult);*/
+            System.out.println("Enter number between 0 - 7.");
+            String guess = scan.nextLine();
+            String result = myDot.checkYourself(guess);
 
+            numOfGuesses++;
 
-        String [] userGuesses = {"1","3","4"};
-        for (int i = 0; i < userGuesses.length; i++){
-            String result = myDot.checkYourself(userGuesses[i]);
-            String testResult = "failed";
-            if (result.equals("hit")) {
-                testResult = "passed";
+            if (result.equals("kill")) {
+                isAlive = false;
+
+                System.out.println("You took " + numOfGuesses + " guesses.");
             }
-            System.out.println(testResult);
         }
-
-        //myDot.getRandomNumber(1, 4);
-
 
     }
 }

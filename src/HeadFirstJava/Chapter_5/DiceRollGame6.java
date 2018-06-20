@@ -9,11 +9,11 @@ public class DiceRollGame6
 
         // roll 5 dice
         Dice6 myDice = new Dice6();
-//        int[] rolls;
-//        rolls = myDice.rollDice();
+        int[] rolls;
+        rolls = myDice.rollDice();
 
         // Tester:
-         int[] rolls = {2, 2, 2, 2, 3};
+//         int[] rolls = {2, 3, 4, 5, 6};
          myDice.determineWinner(rolls);
     }
 }

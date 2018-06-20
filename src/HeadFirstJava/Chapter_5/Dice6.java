@@ -89,6 +89,7 @@ public class Dice6
             System.out.println("You have a straight.");
         }
 
+        // TODO: not working yet.
         if (threes == 1 && pairs == 1) {
             System.out.println("You have a full house. ");
         }
